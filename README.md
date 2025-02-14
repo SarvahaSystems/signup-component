@@ -6,15 +6,13 @@
 
 ```bash
 cd client/
-npm install or
-yarn install
+npm install
 ```
 
 ### Run the Client
 
 ```bash
-npm start or
-yarn start
+npm start
 ```
 
 The application will be available at http://localhost:3000/ by default.

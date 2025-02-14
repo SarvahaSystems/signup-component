@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { generateAndSendOtp, verifyUserOtp } from "../controller/authController";
-import { asyncHandler } from "../utils/common";
 import { validateRequest } from "../middleware/validateRequest";
 import { requestOtpSchema, verifyOtpSchema } from "../schema/otpSchema";
+import { asyncHandler } from "../utils/common";
 
 export const authRouter = Router();
 

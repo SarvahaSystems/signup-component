@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useNavigate } from "react-router-dom";
 import { SITE_KEY } from "../utils/constants";
-import { Notification } from "./Notification";
 import { Errors, FormData } from "../utils/interfaces";
+import { Notification } from "./Notification";
 
 const Signup: React.FC = () => {
     const navigate = useNavigate();
@@ -92,8 +92,6 @@ const Signup: React.FC = () => {
                 setIsOtpSent(true);
             }
         } catch (error: unknown) {
-            console.log(formData);
-
             if (error instanceof Error) {
                 console.error("Error during signup:", error.message);
             } else {
