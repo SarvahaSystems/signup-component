@@ -1,0 +1,36 @@
+{
+    "name": "login-signup-component",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "lint-staged": "lint-staged",
+        "prepare": "husky",
+        "lint": "eslint . --ext .js,.ts,.mjs",
+        "lint:fix": "eslint . --ext .js,.ts,.mjs --fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "lint-staged": {
+        "*.ts": [
+            "eslint . --ext .js,.ts,.mjs --fix",
+            "prettier --write ."
+        ]
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "@typescript-eslint/parser": "^8.22.0",
+        "eslint": "^8.57.1",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-import": "^2.31.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.3",
+        "prettier": "^3.4.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3"
+    }
+}
